@@ -10,8 +10,10 @@ The assessment code is not public at this stage. The synthetic workflow packets,
 |---|---|---:|---:|---:|---:|---:|---:|---:|
 | Employee Offboarding and Access Revocation | Cold first run | 17 | 14 | 1 | 2 | 10 | 0 | 2 |
 | Supplier CAPA and Nonconforming Material Disposition | Fourth run after targeted architecture fixes | 18 | 18 | 0 | 0 | 10 | 0 | 7 |
+| Public Records Request Intake and Fulfillment | Development baseline / regression case | 10 | 10 | 0 | 0 | 4 | 0 | ~24 |
 
 The Supplier CAPA result should not be read as a cold-run result. The same packet was used across multiple runs to identify and fix architectural blind spots. The run history is part of the evaluation.
+The Public Records result is not a blind validation result. It was the first packet built and the system was developed against it. It is included as a development baseline and regression case because it explains why later held-out testing was necessary.
 
 ## How to interpret the result
 
