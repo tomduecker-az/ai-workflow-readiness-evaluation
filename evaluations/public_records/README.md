@@ -10,29 +10,29 @@ It was the first workflow packet built for this project, and the assessment syst
 
 The current result should therefore be read as a regression result: the system now catches the planted issues in this packet without regressing on earlier behavior.
 
+## Included files
+
+* `public_records_workflow_packet.xlsx`
+* `answer_key_public_records_request.md`
+* `public_records_assessment_report.md`
+* `public_records_evaluation_summary.md`
+* `public_records_evaluation_summary.pdf`
+
 ## Result
 
-- 10 planted defects
-- 10 found
-- 0 partially caught
-- 0 missed
-- 4 deliberately correct lookalike items
-- 0 false positives
-- Approximately two dozen findings not planted
+* 10 planted defects
+* 10 found
+* 0 partially caught
+* 0 missed
+* 4 deliberately correct lookalike items
+* 0 false positives
+* Approximately two dozen findings not planted
 
 ## Important limitation
 
 This run produced 35 findings against 10 planted defects. The issue is not false positives; it is granularity. Some findings are technically correct but should be merged because they represent repeated instances of the same underlying issue.
 
 This makes Public Records useful as a baseline and regression case, but not as the headline proof of generalization.
-
-## Included files
-
-- `public_records_workflow_packet.xlsx`
-- `answer_key_public_records_request.md`
-- `public_records_assessment_report.md`
-- `public_records_evaluation_summary.md`
-- `public_records_evaluation_summary.pdf`
 
 ## Notes
 
