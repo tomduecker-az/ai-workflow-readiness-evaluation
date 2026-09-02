@@ -5,6 +5,7 @@ This folder contains synthetic evaluation artifacts for a supplier corrective ac
 ## Included files
 
 - `supplier_capa_workflow_packet.xlsx`
+- `answer_key_supplier_capa.md`
 - `supplier_capa_assessment_report.md`
 - `supplier_capa_evaluation_summary.md`
 - `supplier_capa_evaluation_summary.pdf`
