@@ -1,106 +1,41 @@
-# AI Workflow Readiness Evaluation
+# Employee Offboarding Evaluation
 
-This repository contains public evaluation artifacts for an AI Workflow Readiness Assessment.
+This folder contains synthetic evaluation artifacts for an employee offboarding and access revocation workflow.
 
-The assessment is designed to evaluate whether a documented workflow appears ready for AI-assisted automation: where AI may help, what should remain human-controlled, and which workflow, data, control, ownership, exception-handling, or evidence gaps should be addressed before building.
+## Role of this test
 
-This is not a production-readiness certification. It is not a legal, compliance, security, or operational approval. It is also not a replacement for process owners, compliance teams, security teams, legal teams, or operational experts.
+This is the strongest cold first-run validation example currently in the public evaluation set.
 
-It is a structured first pass.
+The workflow packet was authored by a separate AI assistant working from the intake template alone. The assessment system did not have access to the answer key during the run.
 
-## Why I built this
+The packet was designed to test whether the assessment could identify workflow, control, ownership, exception-handling, data-governance, inventory, traceability, and evidence gaps in a workflow it had not seen before.
 
-A lot of AI automation conversations start with the model or the tool.
+## Result
 
-In practice, the harder questions often come earlier:
+* 17 planted defects
+* 14 found
+* 1 partially caught
+* 2 missed
+* 10 deliberately correct lookalike items
+* 0 false positives
+* 2 unplanted valid findings
 
-- Is the workflow clearly documented?
-- Are the systems and data sources known?
-- Are controls actually implemented in the workflow?
-- Are human review points defined?
-- Are exception paths documented?
-- Are high-consequence actions kept out of AI control?
-- Is there enough evidence to support automation decisions?
-- What is the safest first build?
+## Important limitation
 
-This project is my attempt to make those questions more structured, testable, and inspectable.
+This was a synthetic workflow packet. It is useful as a controlled validation test, but it is still not the same as evaluating a workflow packet completed by a real workflow owner or subject matter expert.
 
-## What is included
+The assessment also did not catch everything. Two planted defects were missed, and one was only partially captured. Those misses are documented in the evaluation summary.
 
-- A blank workflow packet template
-- Completed synthetic workflow packets
-- Generated assessment reports
-- Evaluation summaries
-- Results summary
+## Included files
 
-## What is not included
+* `offboarding_workflow_packet.xlsx`
+* `answer_key.md`
+* `offboarding_assessment_report.md`
+* `offboarding_assessment_report.pdf`
+* `offboarding_evaluation_summary.pdf`
 
-The assessment code is not public at this stage.
+## Notes
 
-The synthetic packets, evaluation summaries, and generated reports are public so the results can be reviewed directly.
+This is a synthetic workflow packet. It does not contain real employee, customer, company, credential, system-access, HR, legal, or confidential data.
 
-## Current public evaluation
-
-### Employee Offboarding and Access Revocation
-
-The current public example uses a synthetic employee offboarding and access revocation workflow.
-
-The test packet included:
-
-- 17 deliberately planted workflow defects
-- 10 deliberately correct lookalike items
-
-Assessment result:
-
-- 14 planted defects found
-- 1 planted defect partially caught
-- 2 planted defects missed
-- 0 false positives against the lookalike items
-- 2 additional real issues found that were not intentionally planted
-
-See:
-
-- `evaluations/offboarding/offboarding_workflow_packet.xlsx`
-- `evaluations/offboarding/offboarding_evaluation_summary.pdf`
-- `evaluations/offboarding/offboarding_assessment_report.pdf`
-- `evaluations/offboarding/offboarding_assessment_report.md`
-
-## How to interpret the results
-
-The evaluation summary maps the generated assessment report back to the known synthetic test packet.
-
-The number of findings in the final report may not match the scoring table exactly. A report can merge related issues, partially capture a planted defect, miss a planted defect, or identify issues that were not intentionally planted.
-
-The point is not to claim the assessment is perfect.
-
-The point is to make the result inspectable: what it found, what it missed, where it was partially right, and whether it created false positives.
-
-## Data handling
-
-Synthetic or de-identified workflow packets only.
-
-Do not submit PHI, PII, customer-identifiable data, employee-identifiable data, supplier-confidential terms, trade secrets, credentials, access tokens, material non-public information, raw system exports, or real regulated records.
-
-See `data_handling.md`.
-
-## Current limitation
-
-The public test packets were synthetic and authored by one person. That is useful for controlled evaluation, but it is still a limitation.
-
-A stronger test is a workflow packet completed by someone else, using synthetic or de-identified data only.
-
-## Repository structure
-
-templates/
-  workflow_packet_template.xlsx
-
-evaluations/
-  offboarding/
-    offboarding_workflow_packet.xlsx
-    offboarding_evaluation_summary.pdf
-    offboarding_assessment_report.pdf
-    offboarding_assessment_report.md
-
-data_handling.md
-results_summary.md
-README.md
+The assessment evaluates the submitted packet. It does not verify a real operating process, legal compliance, security posture, access-control posture, HR policy compliance, or production readiness.
