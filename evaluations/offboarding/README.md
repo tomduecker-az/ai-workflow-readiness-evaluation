@@ -29,7 +29,7 @@ The assessment also did not catch everything. Two planted defects were missed, a
 ## Included files
 
 * `offboarding_workflow_packet.xlsx`
-* `answer_key.md`
+* `answer_key_offboarding.md`
 * `offboarding_assessment_report.md`
 * `offboarding_assessment_report.pdf`
 * `offboarding_evaluation_summary.pdf`
