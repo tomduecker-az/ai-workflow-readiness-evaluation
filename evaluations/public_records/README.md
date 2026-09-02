@@ -29,6 +29,7 @@ This makes Public Records useful as a baseline and regression case, but not as t
 ## Included files
 
 - `public_records_workflow_packet.xlsx`
+- `answer_key_public_records_request.md`
 - `public_records_assessment_report.md`
 - `public_records_evaluation_summary.md`
 - `public_records_evaluation_summary.pdf`
